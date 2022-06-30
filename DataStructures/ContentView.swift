@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    let testQueue = Queue()
+    
+    
     var body: some View {
-        Text("Hello, world!")
+        let values = testQueue.getValuesAsString()
+        
+        Text(values)
             .padding()
     }
 }
